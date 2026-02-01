@@ -6,9 +6,28 @@ Two-pass alpha extraction tool for creating transparent PNG images.
 
 ---
 
+## Usage / 사용법 / 使い方
+
+Refer to the video above, open the cloned folder with Antigravity, and use the prompt below to generate images.
+It works with any language supported by Gemini.
+
+> "Generate a high-quality Japanese anime illustration style image of moist fruit in a glass bowl with rich mid-tones, using a low-angle shot. Strong backlighting is needed to express subsurface scattering. The background should be a solid color. Apply the transparent png generation workflow to sequentially generate the necessary images and convert them into a transparent png. The final output path is the examples directory of the antigravity project."
+
+위 영상을 참고하여 클론한 폴더를 안티그래비티로 열고 아래의 프롬프트를 사용해 이미지를 생성합니다.
+언어는 Gemini 가 지원하는 언어면 동작합니다.
+
+> "미드톤표현이 풍부한 고품질의 일본 애니 일러스트풍으로 유리 보울에 담긴 촉촉하게 젖어 있는 과일을 로우 앵글샷으로 그려줘 역광으로 인한 피하산란 표현필요 배경은 단색으로 하고 투명 png 생성 워크 플로우를 적용해 순차적으로 필요한 이미지 생성후 투명 png 로 변환해. 최종출력은 안티그라비티 프로젝트의 examples 경로야"
+
+上の動画を参考に、クローンしたフォルダをAntigravityで開き、以下のプロンプトを使用して画像を生成してください。
+言語はGeminiがサポートしている言語であれば動作します。
+
+> "ミッドトーン表現が豊かな高品質な日本のアニメイラスト風で、ガラスのボウルに入ったしっとりと濡れている果物をローアングルショットで描いて。逆光による表面下散乱の表現が必要。背景は単色にし、透明png生成ワークフローを適用して順次必要な画像を生成した後、透明pngに変換して。最終出力先はAntigravityプロジェクトのexamplesパスだよ"
+
+---
+
 [![Fruit Bowl Composite](examples/fruit_bowl_composite.jpg)](examples/04_fruit_bowl_transparent.png)
 
-## Usage / 사용법
+## Tool Usage / 도구 사용법
 
 ```bash
 pngalpha <image_on_white> <image_on_black> <output_file>
