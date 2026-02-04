@@ -53,6 +53,10 @@ cd d:\github\transparent-png\pngalpha
 dotnet run -- "<white_background_image_path>" "<black_background_image_path>" "<output_transparent_png_path>"
 ```
 
+> **PowerShell Hang Workaround**: The process might not return an exit code immediately even after finishing.
+> Instead of waiting for `command_status`, use `find_by_name` or `list_dir` to check if `<output_transparent_png_path>` has been created.
+> If the file exists, use `send_command_input` with `Terminate: true` to force close the process and proceed.
+
 ### 5. Verify Result
 
 View the generated transparent PNG file to verify the alpha extraction worked correctly.
